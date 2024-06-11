@@ -20,16 +20,12 @@ void Paciente::setTratamiento(string nuevoTratamiento)
 
 void Dentista::agregarPaciente(string nombre, string tratamiento)
 {
-    
+    pacientes.push_back(Paciente(nombre, tratamiento));
 }
 
+Paciente
 
 
 
 
 
-
-void Dentista::actualizarTratamiento(std::string nombre, std::string nuevoTratamiento)
-{
-
-}

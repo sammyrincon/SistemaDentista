@@ -1,30 +1,16 @@
-//#ifndef CONSULTORIO_H
-//#define CONSULTORIO_H
+#ifndef DENTISTA_H
+#define DENTISTA_H
 
+#include "Paciente.h"
 #include <string>
 #include <vector>
 
 using namespace std;
 
-class Paciente {
-
-private:
-    string nombre;
-    string tratamiento;
-
-public:
-    Paciente();
-    Paciente(string _nombre, string _tratamiento);
-    string getNombre() const;
-    string getTratamiento() const;
-    void setTratamiento(string nuevoTratamiento);
-
-
-};
 
 class Dentista {
 private:
-    std::vector<Paciente> pacientes;
+    vector<Paciente> pacientes;
 
 public:
     void agregarPaciente(string nombre, string tratamiento);
@@ -34,6 +20,6 @@ public:
 
 };
 
-//#endif
+#endif
 
 
